@@ -65,8 +65,9 @@ function init(options) {
     .nodeSize([nodeWidth + nodeSpacing, nodeHeight + nodeSpacing])
 
   // Calculate width of a node with expanded children
+  console.log('LOADING TREE DATA', treeData);
   const childrenWidth = parseInt((treeData.children.length * nodeWidth) / 2)
-
+  console.log('LOADED DATA');
   // <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" xml:space="preserve" viewBox="0 0 193 260" enable-background=" new 0 0 193 260" height="260" width="193"
   // Add svg root for d3
   const svgroot = d3
